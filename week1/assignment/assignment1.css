@@ -1,0 +1,15 @@
+#flex-div {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	height: 500px;
+}
+
+#cnt {
+	color: red;
+	font-size: 4rem;
+}
+
+#egg {
+}

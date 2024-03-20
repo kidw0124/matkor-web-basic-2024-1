@@ -1,0 +1,21 @@
+#combination-table {
+	display: flex;
+	flex-direction: column;
+	height: 20rem;
+	width: 50rem;
+	justify-content: space-around;
+}
+
+.row {
+	height: 100rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+.cell {
+	width: 100rem;
+	text-align: center;
+}
+.header-cell {
+	background-color: #f0f0f0;
+}

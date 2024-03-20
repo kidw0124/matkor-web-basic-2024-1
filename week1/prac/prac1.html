@@ -2,6 +2,44 @@
 <html>
 	<head>
 		<title>Prac 1</title>
+		<style type="text/css">
+			h1 {
+				color: red;
+			}
+			h2 {
+				color: blue;
+			}
+			* {
+				font-family: "Consolas";
+			}
+			.input {
+				width: 100px;
+				height: 50px;
+				background-color: yellow;
+			}
+			#ex1 {
+				background-color: green;
+			}
+			p i {
+				font-size: 90px;
+			}
+			p + p {
+				color: red;
+			}
+			input:hover {
+				border-radius: 20px;
+				border: 5px solid red;
+			}
+			p::first-letter {
+				font-size: 50px;
+				color: green;
+			}
+			input[type="number"] {
+				width: 100px;
+				height: 50px;
+				background-color: blue;
+			}
+		</style>
 	</head>
 	<body>
 		<h1>h1 입니다</h1>
@@ -10,9 +48,10 @@
 		<h4>h4 입니다</h4>
 		<h5>h5 입니다</h5>
 		<h6>h6 입니다</h6>
+		<b>이거는 밖에있는 볼드체 입니다</b>
 		<p>
-			이것은 p 태그입니다. 이 태그는 단락을 <sup>나누는 태그입니다.</sup> 이
-			태그는 단락을 나누는 태그입니다.
+			riwoeqwrjewrpweqrwerwq이것은 p 태그입니다. 이 태그는 단락을
+			<sup>나누는 태그입니다.</sup> 이 태그는 단락을 나누는 태그입니다.
 			<span style="color: blue"> 태그는 단락을 나누는 태그입니다. </span>이
 			태그는 단락을 나누는 태그입니다.
 			<b>이 태그는 단락을 <i>나누는</i> 태그입니다.</b> 이 태그는 단락을 나누는
@@ -46,7 +85,7 @@
 		>
 		<form>
 			<input type="password" name="pw" class="input" />
-			<input type="text" name="pw" class="input input2" />
+			<input type="text" id="ex1" class="input input2" />
 			<input type="checkbox" class="input" />
 			<input type="radio" class="input" />
 			<input type="file" class="input" hidden />
@@ -67,21 +106,18 @@
 			title="YouTube video player"
 			frameborder="0"
 			allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-			allowfullscreen
-		></iframe>
+			allowfullscreen></iframe>
 		<img src="https://www.w3schools.com/html/pic_trulli.jpg" />
 		<audio controls>
 			<source
 				src="https://www.w3schools.com/html/horse.mp3"
-				type="audio/mpeg"
-			/>
+				type="audio/mpeg" />
 			Your browser does not support the audio element.
 		</audio>
 		<video width="320" height="240" controls>
 			<source
 				src="https://www.w3schools.com/html/mov_bbb.mp4"
-				type="video/mp4"
-			/>
+				type="video/mp4" />
 			Your browser does not support the video tag.
 		</video>
 	</body>

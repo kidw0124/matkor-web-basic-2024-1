@@ -1,0 +1,36 @@
+h1 {
+	color: red;
+}
+h2 {
+	color: blue;
+}
+* {
+	font-family: "Consolas";
+}
+.input {
+	width: 100px;
+	height: 50px;
+	background-color: yellow;
+}
+#ex1 {
+	background-color: green;
+}
+p i {
+	font-size: 90px;
+}
+p + p {
+	color: red;
+}
+input:hover {
+	border-radius: 20px;
+	border: 5px solid red;
+}
+p::first-letter {
+	font-size: 50px;
+	color: green;
+}
+input[type="number"] {
+	width: 100px;
+	height: 50px;
+	background-color: blue;
+}

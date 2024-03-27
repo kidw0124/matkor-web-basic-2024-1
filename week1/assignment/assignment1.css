@@ -1,4 +1,11 @@
-#flex-div {
+#page {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	height: 500px;
+}
+.flex-div {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
@@ -6,7 +13,8 @@
 	height: 500px;
 }
 
-#cnt {
+#cnt1,
+#cnt2 {
 	color: red;
 	font-size: 4rem;
 }

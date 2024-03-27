@@ -17,3 +17,8 @@ const hitEgg = () => {
 };
 
 egg_dom.addEventListener("click", hitEgg);
+
+for (let i = 0; i < num; i++) {
+	egg_dom.click();
+	console.log(i);
+}

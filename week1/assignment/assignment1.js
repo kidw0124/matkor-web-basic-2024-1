@@ -8,6 +8,7 @@ const egg_dom = document.getElementById("egg");
 
 cnt_dom.innerHTML = num;
 
+const org_num = num;
 const hitEgg = () => {
 	num--;
 	cnt_dom.innerHTML = num;
@@ -18,7 +19,7 @@ const hitEgg = () => {
 
 egg_dom.addEventListener("click", hitEgg);
 
-for (let i = 0; i < num; i++) {
+for (let i = 0; i < org_num; i++) {
 	egg_dom.click();
 	console.log(i);
 }

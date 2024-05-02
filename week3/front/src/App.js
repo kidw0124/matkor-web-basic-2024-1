@@ -1,23 +1,32 @@
 import logo from "./logo.svg";
 import "./App.css";
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 
-import { Signup, Login, Number } from "./pages";
+import { Signup, Login, Home } from "./pages";
 
 function App() {
+	const location = useLocation();
+	console.log(location);
 	return (
-		<BrowserRouter>
-			<div className="App">
-				<Routes>
-					<Route path="/signup" element={<Signup />} />
-					<Route
-						path="/login"
-						element={<Login time={new Date().toString()} />}
-					/>
-					<Route path="/number/:number" element={<Number />} />
-				</Routes>
+		<div className="App">
+			<Routes>
+				<Route path="/signup" element={<Signup />} />
+				<Route path="/login" element={<Login />} />
+				<Route path="/home/:name" element={<Home />} />
+			</Routes>
+
+			<div
+				style={{
+					width: "100%",
+					display: "flex",
+					justifyContent: "space-between",
+					padding: "10px",
+					backgroundColor: "lightgray",
+				}}
+			>
+				location.pathname: {location.pathname}
 			</div>
-		</BrowserRouter>
+		</div>
 	);
 }
 
